@@ -16,7 +16,7 @@ public class Blunt : Melee
     {
         if (IsWeaponBroken()) return 0;
         LooseDurability(1);
-        return 2 * base.GetWeight() + base.GetDamage();
+        return base.GetWeight() + base.GetDamage() + base.GetDurability();
     }
 
 }

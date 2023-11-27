@@ -10,10 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 085ce9de9741b3e4b8a3ada5f9c14664, type: 3}
-  m_Name: SharpBlade
+  m_Name: SharpKnife
   m_EditorClassIdentifier: 
   damage: 10
-  name: The Sharpest Sword
+  name: SharpKnife
   weight: 1
-  durability: 42
-  sharpness: 12.434999
+  durability: 100
+  sharpness: 20
