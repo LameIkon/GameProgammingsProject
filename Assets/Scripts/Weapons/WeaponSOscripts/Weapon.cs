@@ -24,7 +24,8 @@ public abstract class Weapon : ScriptableObject
 
     public virtual void LooseDurability(int damage)
     {
-        if (IsWeaponBroken()) return;
+        if (IsWeaponBroken()) { Debug.Log(GetDurability()); return; }
+        else
         this.durability -= damage;
     }
 

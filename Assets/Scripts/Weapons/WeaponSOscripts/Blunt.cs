@@ -14,7 +14,6 @@ public class Blunt : Melee
 
     public override int DoDamage()
     {
-        if (IsWeaponBroken()) return 0;
         LooseDurability(1);
         return base.GetWeight() + base.GetDamage() + base.GetDurability();
     }

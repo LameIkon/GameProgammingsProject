@@ -18,7 +18,6 @@ public class Attack : MonoBehaviour
     void Start()
     {
         boxCollider = GetComponent<BoxCollider2D>();
-
         boxCollider.enabled = false;
     }
 
