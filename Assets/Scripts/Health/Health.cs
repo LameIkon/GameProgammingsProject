@@ -6,23 +6,25 @@ public class Health : MonoBehaviour
 {
 
     [SerializeField] private int healthPoints;
+    private int startingHealth;
+
+    private HealthBar healthBar;
 
     void Start()
     {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        if (!IsAlive())  Destroy(gameObject); 
-
+        startingHealth = healthPoints;
+        healthBar = GetComponentInChildren<HealthBar>();
     }
 
 
     public void TakeDamage(int damage) 
     {
         healthPoints -= damage;
+        
+        if (!IsAlive())  Destroy(gameObject);
+        
+        healthBar.UpdateHealthBar(healthPoints, startingHealth);
+        
     }
 
     public bool IsAlive() 
