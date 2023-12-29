@@ -8,7 +8,7 @@ using UnityEngine.UI;
 
 public class InputChanger : MonoBehaviour
 {
-    private Inputs inputs;
+    private InputsManager inputs;
 
     private TextMeshProUGUI tmp;
 
@@ -16,7 +16,7 @@ public class InputChanger : MonoBehaviour
 
     void Start() 
     {
-        inputs = GameObject.FindWithTag("Player2").GetComponent<Inputs>();
+        //inputs = GameObject.FindWithTag("Player2").GetComponent<Inputs>();
         tmp = GetComponentInChildren<TextMeshProUGUI>();
         button = GetComponent<Button>();
 

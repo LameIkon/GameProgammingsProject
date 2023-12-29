@@ -11,7 +11,7 @@ public class OldSchoolMovement : MonoBehaviour
     [SerializeField] private float maxSpeed = 20f;
     [SerializeField] private LayerMask groundLayer;
 
-    private Inputs inputs;
+    private InputsManager inputs;
     private Rigidbody2D rb;
     private Collider2D coll;
 
@@ -22,8 +22,7 @@ public class OldSchoolMovement : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-
-        inputs = GetComponent<Inputs>();
+        inputs = GetComponent<InputsManager>();
         rb = GetComponent<Rigidbody2D>();
         coll = GetComponent<Collider2D>();
     }
@@ -123,7 +122,6 @@ public class OldSchoolMovement : MonoBehaviour
             rb.AddForce(Vector2.right * speed, ForceMode2D.Force);
             //movementX = 0;            
         }
-
         else if (movementX == -1)
         {
             rb.AddForce(Vector2.left * speed, ForceMode2D.Force);

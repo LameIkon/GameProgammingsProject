@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 3563480070913194907}
   - component: {fileID: 6736806011874524092}
   - component: {fileID: 8875351574557787110}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: HealthBar
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -128,7 +128,7 @@ GameObject:
   - component: {fileID: 8895655419549293694}
   - component: {fileID: 8539023402166609825}
   - component: {fileID: 21898404313419872}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Tree
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -272,7 +272,7 @@ GameObject:
   - component: {fileID: 4965730483826089304}
   - component: {fileID: 6413629631900578686}
   - component: {fileID: 5815639106018339111}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Foreground
   m_TagString: Untagged
   m_Icon: {fileID: 0}

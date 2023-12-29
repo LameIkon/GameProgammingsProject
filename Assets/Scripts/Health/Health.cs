@@ -2,39 +2,16 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Health : MonoBehaviour
+public class Health
 {
 
-    [SerializeField] private int healthPoints;
-    private int startingHealth;
+    public int healthPoint { get; private set;  }
+    public int maxHealthPoints { get; private set; }
 
-    private HealthBar healthBar;
 
-    void Start()
+    public Health(int healthPoint, int maxHealthPoints)
     {
-        startingHealth = healthPoints;
-        healthBar = GetComponentInChildren<HealthBar>();
+        this.healthPoint = healthPoint;
+        this.maxHealthPoints = maxHealthPoints;
     }
-
-
-    public void TakeDamage(int damage) 
-    {
-        healthPoints -= damage;
-        
-        if (!IsAlive())  Destroy(gameObject);
-        
-        healthBar.UpdateHealthBar(healthPoints, startingHealth);
-        
-    }
-
-    public bool IsAlive() 
-    {
-        if (healthPoints > 0) return true;
-        
-        else return false;
-
-    }
-
-
-
 }
